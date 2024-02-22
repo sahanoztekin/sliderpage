@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff7f0;
+}
+
+.container {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 119px;
+}
+
+.header a {
+  display: inline-block;
+  width: 176px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.header a:hover {
+  background-color: #755cde;
+}
+
+.promotion {
+  text-align: center;
+}
+
+.promotion h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45.36px;
+  color: #000;
+  width: 343px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.promotion p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7a746e;
+  width: 285px;
+  height: 104px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blocks {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.block {
+  background-color: #755cde;
+  border-radius: 8px;
+  color: #fff;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+
+  img {
+    align-self: flex-end;
+  }
+
+  h4 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+
+.single-block {
+  grid-column: span 2 !important;
+}
+
+.double-row-block {
+  gap: 94px;
+}
+
+.bg-orange {
+  background-color: #f6a560;
+  gap: 40px;
+}
+
+.bg-pembe {
+  gap: 40px;
+  background-color: #f39e9e;
+}
+
+.bg-bordo {
+  background: #552049;
+}
+
+.bg-mavi {
+  background: #61c4b7;
+}
+
+.bg-kirmizi {
+  background: #eb7565;
+}
+
+.amy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  img {
+    margin-top: 68px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: Plus Jakarta Sans;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  p {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #7a746e;
+  }
+  a {
+    display: inline-block;
+    width: 176px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #eb7565;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+.amy-tittle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.my-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  overflow: hidden;
+
+  img {
+    width: 270px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  h1 {
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.images-container {
+  overflow-x: hidden;
+}
+
+.my-work .images-container {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  cursor: pointer;
+
+  button {
+    width: 64px;
+    height: 64px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:active {
+    background-color: #755cde;
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.with-me {
+  background: #030303;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 68px;
+  gap: 24px;
+  border-radius: 12px;
+  padding: 48px;
+
+  h1 {
+    font-family: Plus Jakarta Sans;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  p {
+    font-family: Plus Jakarta Sans;
+    line-height: 28px;
+    text-align: center;
+    width: 295px;
+  }
+  a {
+    display: inline-block;
+    width: 176px;
+    line-height: 44px;
+    text-align: center;
+    background: #eb7565;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  a:hover {
+    background-color: #f6a560;
+  }
+}
+
+.with-me-tittle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .promotion h1 {
+    width: 690px;
+    height: 55px;
+  }
+
+  .promotion p {
+    width: 573px;
+    height: 56px;
+  }
+
+  .blocks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .double-row-block {
+    grid-row: span 2;
+  }
+
+  .amy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .amy-img {
+    flex: 0 0 auto;
+    width: 364px;
+    overflow: visible;
+    position: relative;
+    left: -10%;
+  }
+
+  .amy-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .amy-tittle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .amy-tittle h1,
+  .amy-tittle p {
+    text-align: left;
+  }
+
+  .my-work {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .my-work .images-container {
+    display: flex;
+  }
+
+  .my-work .images-container img {
+    width: 540px;
+    height: 360px;
+  }
+
+  .with-me {
+    p {
+      font-family: Plus Jakarta Sans;
+      line-height: 28px;
+      width: 480px;
+      text-align: center;
+    }
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    margin: 34px 0px;
+  }
+
+  .promotion h1 {
+    width: 751px;
+    height: 71px;
+  }
+
+  .promotion p {
+    width: 650px;
+    height: 56px;
+  }
+
+  .blocks {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .double-row-block {
+    grid-row: span 2;
+  }
+
+  .amy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .amy-img {
+    margin-right: 125px;
+    img {
+      width: 445px;
+    }
+  }
+
+  .amy-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .amy-tittle h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 90%;
+  }
+
+  .amy-tittle p {
+    width: 540px;
+    text-align: start;
+  }
+
+  .with-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 320px;
+  }
+
+  .with-me-tittle {
+    align-items: self-start;
+  }
+
+  .with-me-tittle p {
+    width: 540px;
+    text-align: start;
+  }
+
+  .my-work {
+    img {
+      width: 540px;
+    }
+  }
+}
