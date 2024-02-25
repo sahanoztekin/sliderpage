@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <!-- <script src="script.js" defer></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
       rel="stylesheet"
@@ -67,16 +70,34 @@
       </section>
       <section class="my-work full-width">
         <h1>My Work</h1>
-        <div class="images-container">
-          <img src="assets/Bitmap.svg" alt="foto" />
-          <img src="assets/Bitmap2.svg" alt="foto" />
-          <img src="assets/Bitmap3.svg" alt="foto" />
-          <img src="assets/Bitmap4.svg" alt="foto" />
-          <img src="assets/Bitmap5.svg" alt="foto" />
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/Bitmap.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/Bitmap2.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/Bitmap3.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/Bitmap4.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/Bitmap5.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="buttons">
-          <button id="slideLeft"><</button>
-          <button id="slideRight">></button>
+
+        <div class="swiper-buttons">
+          <div class="swiper-button-prev-custom">
+            <img src="./assets/right-icon.svg" alt="iconright" />
+          </div>
+          <div class="swiper-button-next-custom">
+            <img src="./assets/right-icon.svg" alt="iconright"
+          </div>
         </div>
       </section>
       <section class="with-me">
@@ -97,5 +118,25 @@
         <a href="#">Free Consultation</a>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 15,
+        initialSlide: 1,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        },
+        breakpoints: {
+          768: {
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
